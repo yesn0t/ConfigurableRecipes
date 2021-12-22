@@ -1,4 +1,4 @@
-package net.spacegoat.craftable_plus;
+package net.spacegoat.configurable_recipes;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

@@ -1,0 +1,18 @@
+{
+  "text.autoconfig.configurable_recipes.title": "Craftable++ Config",
+  "text.autoconfig.configurable_recipes.category.default": "Recipes",
+  "text.autoconfig.configurable_recipes.category.rotten_flesh_to_leather": "Rotten Flesh To Leather",
+
+
+  "text.autoconfig.configurable_recipes.option.recipes.enableHorseArmorRecipes": "Horse Armor Recipes",
+  "text.autoconfig.configurable_recipes.option.recipes.enableSaddleRecipe": "Saddle Recipe",
+  "text.autoconfig.configurable_recipes.option.recipes.enableSpongeRecipes": "Sponge Recipes",
+  "text.autoconfig.configurable_recipes.option.recipes.enableGlowstoneDustRecipe": "Glowstone Dust Recipe",
+  "text.autoconfig.configurable_recipes.option.recipes.enableNameTagRecipe": "Name Tag Recipe",
+
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromFurnace": "Rotten Flesh To Leather BY Furnace",
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.driedKelpFromFurnace": "Dried Kelp To Leather By Furnace",
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.driedKelpFromCampfire": "Dried Kelp To Leather By Campfire",
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshToBeef": "Rotten Flesh To Beef By Smoker"
+}

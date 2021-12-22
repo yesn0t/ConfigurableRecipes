@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "craftable_plus",
+  "id": "configurable_recipes",
   "version": "${version}",
 
   "name": "Craftable++",
@@ -15,15 +15,15 @@
   },
 
   "license": "MIT",
-  "icon": "craftable_plus_plus.png",
+  "icon": "configurable_recipes.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.spacegoat.craftable_plus.ModMain"
+      "net.spacegoat.configurable_recipes.ModMain"
     ],
     "modmenu": [
-      "net.spacegoat.craftable_plus.ModMenuIntegration"
+      "net.spacegoat.configurable_recipes.ModMenuIntegration"
     ]
   },
 

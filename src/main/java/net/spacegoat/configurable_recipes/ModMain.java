@@ -1,4 +1,4 @@
-package net.spacegoat.craftable_plus;
+package net.spacegoat.configurable_recipes;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -9,8 +9,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ModMain implements ModInitializer {
-	public static final String MOD_ID = "craftable_plus";
-	public static final Logger LOGGER = LogManager.getLogger("craftable_plus");
+	public static final String MOD_ID = "configurable_recipes";
+	public static final Logger LOGGER = LogManager.getLogger("configurable_recipes");
 
 	@Override
 	public void onInitialize() {
@@ -58,59 +58,59 @@ public class ModMain implements ModInitializer {
 		});
 	}
 	private void horseArmorRecipes() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "horse_armor_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "horse_armor_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void spongeRecipes() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "sponge_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "sponge_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void glowstoneDustRecipe() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "glowstone_dust_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "glowstone_dust_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void nametagRecipe() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "nametag_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "nametag_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 
 	//ROTTEN FLESH TO LEATHER
 	private void rottenFleshToLeatherFromFurnace() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "rottenflesh_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "rottenflesh_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void rottenFleshToLeatherFromCampfire() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "rottenflesh_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "rottenflesh_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void rottenFleshToBeef() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "rottenflesh_to_beef"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "rottenflesh_to_beef"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void driedKelpToLeatherFurnace() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "driedkelp_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "driedkelp_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void driedKelpToLeatherCampfire() {
-		FabricLoader.getInstance().getModContainer(ModMain.MOD_ID).ifPresent(modContainer -> {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					ModMain.MOD_ID, "driedkelp_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "driedkelp_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 }

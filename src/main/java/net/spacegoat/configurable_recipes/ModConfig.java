@@ -1,4 +1,4 @@
-package net.spacegoat.craftable_plus;
+package net.spacegoat.configurable_recipes;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
