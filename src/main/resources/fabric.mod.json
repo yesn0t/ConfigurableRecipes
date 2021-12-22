@@ -15,7 +15,7 @@
   },
 
   "license": "MIT",
-  "icon": "configurable_recipes.png",
+  "icon": "configurable_recipes_16x16.png",
 
   "environment": "*",
   "entrypoints": {
@@ -31,9 +31,8 @@
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": ["1.17","1.17.x","1.18","1.18.x"],
-    "java": ["16","17","18","19"],
-    "cloth-config2": ">=5.0.34",
-    "modmenu": ">=2.0.2"
+    "java": ["16",">=17"],
+    "cloth-config2": ">=5.0.34"
   },
   "suggests": {
   }
