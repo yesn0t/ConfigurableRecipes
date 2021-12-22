@@ -1,11 +1,10 @@
+##
 
-<img src="https://raw.githubusercontent.com/spacegoat3/ConfigurableRecipes/1.18/src/main/resources/configurable_recipes.png?token=AQZMSS7TQO3ZSQZFMWYUBSDBYMH7S" width="111" height="111">
+<img src="https://raw.githubusercontent.com/spacegoat3/ConfigurableRecipes/1.18/src/main/resources/configurable_recipes.png?token=AQZMSS7MDJSABEP6YV5RFCLBYMIS4" width="150" height="150">
 
 # Configurable Recipes
 
-<img src="">
-
-## What is this?
+## About
 
 <font size="3"> Configurable Recipes is a Minecraft Fabric Mod that adds new recipes to the game. Those recipes can be 
 enabled or disabled trough config. </font>
