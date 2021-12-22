@@ -33,7 +33,7 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         public boolean enableSaddleRecipe = true;
         @ConfigEntry.Gui.RequiresRestart
-        public boolean enableSpongeRecipes = true;
+        public boolean enableSpongeRecipe = true;
         @ConfigEntry.Gui.RequiresRestart
         public boolean enableGlowstoneDustRecipe = true;
         @ConfigEntry.Gui.RequiresRestart

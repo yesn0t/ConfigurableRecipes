@@ -3,7 +3,7 @@
   "id": "configurable_recipes",
   "version": "${version}",
 
-  "name": "Craftable++",
+  "name": "Configurable Recipes",
   "description": "Adds new recipes to the game. You can enable and disable specific recipes trough config.",
   "authors": [
     "spacegoat3"

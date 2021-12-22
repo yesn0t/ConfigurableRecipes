@@ -6,7 +6,7 @@
 
   "text.autoconfig.configurable_recipes.option.recipes.enableHorseArmorRecipes": "Horse Armor Recipes",
   "text.autoconfig.configurable_recipes.option.recipes.enableSaddleRecipe": "Saddle Recipe",
-  "text.autoconfig.configurable_recipes.option.recipes.enableSpongeRecipes": "Sponge Recipes",
+  "text.autoconfig.configurable_recipes.option.recipes.enableSpongeRecipe": "Sponge Recipe",
   "text.autoconfig.configurable_recipes.option.recipes.enableGlowstoneDustRecipe": "Glowstone Dust Recipe",
   "text.autoconfig.configurable_recipes.option.recipes.enableNameTagRecipe": "Name Tag Recipe",
 

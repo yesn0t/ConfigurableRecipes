@@ -22,8 +22,8 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().recipes.enableHorseArmorRecipes){
 			horseArmorRecipes();
 		}
-		if (ModConfig.getConfig().recipes.enableSpongeRecipes){
-			spongeRecipes();
+		if (ModConfig.getConfig().recipes.enableSpongeRecipe){
+			spongeRecipe();
 		}
 		if (ModConfig.getConfig().recipes.enableGlowstoneDustRecipe){
 			glowstoneDustRecipe();
@@ -63,10 +63,10 @@ public class ModMain implements ModInitializer {
 					MOD_ID, "horse_armor_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
-	private void spongeRecipes() {
+	private void spongeRecipe() {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					MOD_ID, "sponge_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "sponge_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 	private void glowstoneDustRecipe() {
