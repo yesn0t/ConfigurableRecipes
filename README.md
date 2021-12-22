@@ -12,7 +12,7 @@ enabled or disabled trough config. </font>
 ## Installation
 
 <font size="3"> Configurable Recipes is a mod created for <a href="https://fabricmc.net/">Fabric Mod Loader</a>. 
-It also needs <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">Cloth Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/modmenu">Mod Menu</a> to be installed. </font>
+It also needs <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">Cloth Config</a> to be installed. </font>
 
 ## License
 
