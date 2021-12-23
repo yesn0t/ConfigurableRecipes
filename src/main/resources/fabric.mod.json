@@ -4,14 +4,20 @@
   "version": "${version}",
 
   "name": "Configurable Recipes",
-  "description": "Adds new recipes to the game. You can enable and disable specific recipes trough config.",
+  "description": "Adds new recipes to the game. You can enable and disable specific recipes trough config. §lPlease check the 'Homepage' for the recipes.",
   "authors": [
     "spacegoat3"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/configurable-recipes",
-    "sources": "https://github.com/spacegoat3/CraftablePlusPlus-Fabric",
-    "issues": "https://github.com/spacegoat3/CraftablePlusPlus-Fabric/issues"
+    "homepage": "https://github.com/spacegoat3/ConfigurableRecipes/wiki",
+    "issues": "https://github.com/spacegoat3/ConfigurableRecipes/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "curseforge.page": "https://www.curseforge.com/minecraft/mc-mods/configurable-recipes"
+      }
+    }
   },
 
   "license": "MIT",
@@ -35,5 +41,6 @@
     "cloth-config2": ">=5.0.34"
   },
   "suggests": {
+    "modmenu": "3.0.1"
   }
 }

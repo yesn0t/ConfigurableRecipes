@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "configurable_recipes:saplings"
+      "tag": "minecraft:saplings"
     }
   ],
   "result": {
