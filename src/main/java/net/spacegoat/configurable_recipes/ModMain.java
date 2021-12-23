@@ -16,20 +16,23 @@ public class ModMain implements ModInitializer {
 	public void onInitialize() {
 
 		//NORMAL RECIPES
-		if (ModConfig.getConfig().recipes.enableSaddleRecipe){
+		if (ModConfig.getConfig().vanillaRecipes.enableSaddleRecipe){
 			saddleRecipe();
 		}
-		if (ModConfig.getConfig().recipes.enableHorseArmorRecipes){
+		if (ModConfig.getConfig().vanillaRecipes.enableHorseArmorRecipes){
 			horseArmorRecipes();
 		}
-		if (ModConfig.getConfig().recipes.enableSpongeRecipe){
+		if (ModConfig.getConfig().vanillaRecipes.enableSpongeRecipe){
 			spongeRecipe();
 		}
-		if (ModConfig.getConfig().recipes.enableGlowstoneDustRecipe){
+		if (ModConfig.getConfig().vanillaRecipes.enableGlowstoneDustRecipe){
 			glowstoneDustRecipe();
 		}
-		if (ModConfig.getConfig().recipes.enableNameTagRecipe){
+		if (ModConfig.getConfig().vanillaRecipes.enableNameTagRecipe){
 			nametagRecipe();
+		}
+		if (ModConfig.getConfig().vanillaRecipes.saplingToStick){
+			saplingToStickRecipes();
 		}
 
 		//ROTTEN FLESH TO LEATHER
@@ -79,6 +82,12 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "nametag_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void saplingToStickRecipes() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "sapling_to_stick_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 

@@ -14,7 +14,7 @@ public class ModConfig implements ConfigData {
     private transient static boolean registered = false;
 
     @ConfigEntry.Gui.TransitiveObject
-    public Recipes recipes = new Recipes();
+    public Recipes vanillaRecipes = new Recipes();
 
     @ConfigEntry.Gui.TransitiveObject
     @ConfigEntry.Category("rotten_flesh_to_leather")
@@ -38,6 +38,8 @@ public class ModConfig implements ConfigData {
         public boolean enableGlowstoneDustRecipe = true;
         @ConfigEntry.Gui.RequiresRestart
         public boolean enableNameTagRecipe = true;
+        @ConfigEntry.Gui.RequiresRestart
+        public boolean saplingToStick = true;
     }
     public static class RottenFleshToLeather{
         @ConfigEntry.Gui.RequiresRestart

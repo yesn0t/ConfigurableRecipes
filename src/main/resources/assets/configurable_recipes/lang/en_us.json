@@ -1,13 +1,13 @@
 {
   "text.autoconfig.configurable_recipes.title": "Configurable Recipes Config",
-  "text.autoconfig.configurable_recipes.category.default": "Recipes",
+  "text.autoconfig.configurable_recipes.category.default": "Vanilla Recipes",
   "text.autoconfig.configurable_recipes.category.rotten_flesh_to_leather": "Rotten Flesh To Leather",
 
-  "text.autoconfig.configurable_recipes.option.recipes.enableHorseArmorRecipes": "Horse Armor Recipes",
-  "text.autoconfig.configurable_recipes.option.recipes.enableSaddleRecipe": "Saddle Recipe",
-  "text.autoconfig.configurable_recipes.option.recipes.enableSpongeRecipe": "Sponge Recipe",
-  "text.autoconfig.configurable_recipes.option.recipes.enableGlowstoneDustRecipe": "Glowstone Dust Recipe",
-  "text.autoconfig.configurable_recipes.option.recipes.enableNameTagRecipe": "Name Tag Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableHorseArmorRecipes": "Horse Armor Recipes",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableSaddleRecipe": "Saddle Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableSpongeRecipe": "Sponge Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableGlowstoneDustRecipe": "Glowstone Dust Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableNameTagRecipe": "Name Tag Recipe",
 
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromFurnace": "Rotten Flesh To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",
