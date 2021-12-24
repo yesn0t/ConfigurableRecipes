@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " G ",
+    "ggg"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:logs"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:bell",
+    "count": 1
+  }
+}

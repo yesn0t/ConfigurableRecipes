@@ -1,5 +1,6 @@
 package net.spacegoat.configurable_recipes;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
@@ -33,6 +34,15 @@ public class ModMain implements ModInitializer {
 		}
 		if (ModConfig.getConfig().vanillaRecipes.saplingToStick){
 			saplingToStickRecipes();
+		}
+		if (ModConfig.getConfig().vanillaRecipes.enableTotemOfUndyingRecipe){
+			totemOfUndyingRecipe();
+		}
+		if (ModConfig.getConfig().vanillaRecipes.enableBellRecipe){
+			bellRecipe();
+		}
+		if (ModConfig.getConfig().vanillaRecipes.enableTridentRecipe){
+			tridentRecipe();
 		}
 
 		//ROTTEN FLESH TO LEATHER
@@ -88,6 +98,24 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "sapling_to_stick_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void totemOfUndyingRecipe(){
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "totem_of_undying_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void bellRecipe(){
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "bell_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void tridentRecipe(){
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "trident_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 
