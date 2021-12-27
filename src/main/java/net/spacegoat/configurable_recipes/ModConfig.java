@@ -47,23 +47,31 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("1 Any Sapling = 2 Sticks")
         public boolean saplingToStick = true;
+        @ConfigEntry.Gui.RequiresRestart
         @Comment("2 Emeralds + 4 Golden Ingots + 1 Nether Star = Totem of Undying")
         public boolean enableTotemOfUndyingRecipe = true;
+        @ConfigEntry.Gui.RequiresRestart
         @Comment("3 Any Type Of Logs + 1 Gold Block + 3 Gold Ingots")
         public boolean enableBellRecipe = true;
+        @ConfigEntry.Gui.RequiresRestart
         @Comment("3 Nether Quartz + 3 Prismarine Shards + 1 Prismarine = Trident")
         public boolean enableTridentRecipe = true;
     }
     public static class RottenFleshToLeather{
         @ConfigEntry.Gui.RequiresRestart
+        @Comment("40 Seconds / 800 Ticks - 0.5 Experience")
         public boolean rottenFleshFromFurnace = true;
         @ConfigEntry.Gui.RequiresRestart
+        @Comment("40 Seconds / 800 Ticks - 1 Experience")
         public boolean rottenFleshFromCampfire = true;
         @ConfigEntry.Gui.RequiresRestart
+        @Comment("23 Seconds / 460 Ticks - 0.5 Experience")
         public boolean driedKelpFromFurnace = true;
         @ConfigEntry.Gui.RequiresRestart
+        @Comment("23 Seconds / 460 Ticks - 1 Experience")
         public boolean driedKelpFromCampfire = true;
         @ConfigEntry.Gui.RequiresRestart
-        public boolean rottenFleshToBeef = true;
+        @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
+        public boolean rottenFleshToBeefFromSmoker = true;
     }
 }

@@ -58,7 +58,7 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().fleshToLeather.driedKelpFromCampfire){
 			driedKelpToLeatherCampfire();
 		}
-		if (ModConfig.getConfig().fleshToLeather.rottenFleshToBeef){
+		if (ModConfig.getConfig().fleshToLeather.rottenFleshToBeefFromSmoker){
 			rottenFleshToBeef();
 		}
 	}

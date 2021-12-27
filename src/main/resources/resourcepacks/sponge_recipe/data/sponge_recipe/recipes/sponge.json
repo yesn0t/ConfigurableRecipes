@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#S#",
-    "SMS",
+    "SBS",
     "#S#"
   ],
   "key": {
@@ -12,8 +12,8 @@
     "S": {
       "tag": "configurable_recipes:seeds"
     },
-    "M": {
-      "item": "minecraft:slime_ball"
+    "B": {
+      "item": "minecraft:magma_cream"
     }
   },
   "result": {

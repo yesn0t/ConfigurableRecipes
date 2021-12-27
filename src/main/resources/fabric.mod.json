@@ -15,7 +15,8 @@
   "custom": {
     "modmenu": {
       "links": {
-        "curseforge.page": "https://www.curseforge.com/minecraft/mc-mods/configurable-recipes"
+        "curseforge.page": "https://www.curseforge.com/minecraft/mc-mods/configurable-recipes",
+        "modrinth.page": "https://modrinth.com/mod/configurable-recipes"
       }
     }
   },
@@ -32,7 +33,6 @@
       "net.spacegoat.configurable_recipes.ModMenuIntegration"
     ]
   },
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
@@ -41,6 +41,6 @@
     "cloth-config2": ">=5.0.34"
   },
   "suggests": {
-    "modmenu": "3.0.1"
+    "modmenu": "*"
   }
 }
