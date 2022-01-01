@@ -59,6 +59,9 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("All recipes contain Iron Ingots and Chains. Please check the Wiki for the recipes.")
         public boolean enableChainmailArmorRecipes = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("5 String in X shape = Trident")
+        public boolean enableCobwebRecipe = true;
     }
     public static class RottenFleshToLeather{
         @ConfigEntry.Gui.RequiresRestart
