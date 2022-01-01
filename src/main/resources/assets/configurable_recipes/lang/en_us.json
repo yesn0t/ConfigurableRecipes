@@ -11,7 +11,11 @@
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableSpongeRecipe": "Sponge Recipe",
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableGlowstoneDustRecipe": "Glowstone Dust Recipe",
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableNameTagRecipe": "Name Tag Recipe",
-  "text.autoconfig.configurable_recipes.option.vanillaRecipes.saplingToStick": "Sapling To Stick",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.saplingToStick": "Sapling To Stick Recipes",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableTotemOfUndyingRecipe": "Totem of Undying Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableBellRecipe": "Bell Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableTridentRecipe": "Trident Recipe",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableChainmailArmorRecipes": "Chainmail Armor Recipes",
 
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromFurnace": "Rotten Flesh To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",

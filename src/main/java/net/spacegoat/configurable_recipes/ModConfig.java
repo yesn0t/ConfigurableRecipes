@@ -56,6 +56,9 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("3 Nether Quartz + 3 Prismarine Shards + 1 Prismarine = Trident")
         public boolean enableTridentRecipe = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("All recipes contain Iron Ingots and Chains. Please check the Wiki for the recipes.")
+        public boolean enableChainmailArmorRecipes = true;
     }
     public static class RottenFleshToLeather{
         @ConfigEntry.Gui.RequiresRestart

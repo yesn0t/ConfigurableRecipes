@@ -44,6 +44,9 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().vanillaRecipes.enableTridentRecipe){
 			tridentRecipe();
 		}
+		if (ModConfig.getConfig().vanillaRecipes.enableChainmailArmorRecipes){
+			chainmailArmorRecipes();
+		}
 
 		//ROTTEN FLESH TO LEATHER
 		if (ModConfig.getConfig().fleshToLeather.rottenFleshFromFurnace){
@@ -116,6 +119,12 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "trident_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void chainmailArmorRecipes(){
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "chainmail_armor_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 
