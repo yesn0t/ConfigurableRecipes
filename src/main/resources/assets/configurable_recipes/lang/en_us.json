@@ -21,5 +21,5 @@
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",
   "text.autoconfig.configurable_recipes.option.fleshToLeather.driedKelpFromFurnace": "Dried Kelp To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.fleshToLeather.driedKelpFromCampfire": "Dried Kelp To Leather By Campfire",
-  "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshToBeef": "Rotten Flesh To Beef By Smoker"
+  "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshToBeefFromSmoker": "Rotten Flesh To Beef By Smoker"
 }
