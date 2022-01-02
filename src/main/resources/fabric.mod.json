@@ -4,9 +4,10 @@
   "version": "${version}",
 
   "name": "Configurable Recipes",
-  "description": "Adds new recipes to the game. You can enable and disable specific recipes trough config. §lPlease check the 'Homepage' for the recipes.",
+  "description": "Adds new recipes to the game. You can enable and disable specific recipes trough config. §lPlease check the 'Website' for the recipes.",
   "authors": [
-    "spacegoat3"
+    "spacegoat3",
+    "yesn0t"
   ],
   "contact": {
     "homepage": "https://github.com/spacegoat3/ConfigurableRecipes/wiki",

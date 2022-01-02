@@ -16,7 +16,7 @@ public class ModMain implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		//NORMAL RECIPES
+		//VANILLA RECIPES
 		if (ModConfig.getConfig().vanillaRecipes.enableSaddleRecipe){
 			saddleRecipe();
 		}
@@ -51,6 +51,7 @@ public class ModMain implements ModInitializer {
 			cobwebRecipe();
 		}
 
+
 		//ROTTEN FLESH TO LEATHER
 		if (ModConfig.getConfig().fleshToLeather.rottenFleshFromFurnace){
 			rottenFleshToLeatherFromFurnace();
@@ -67,7 +68,16 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().fleshToLeather.rottenFleshToBeefFromSmoker){
 			rottenFleshToBeef();
 		}
+
+
+		if (ModConfig.getConfig().craftableOres.stoneAndOreWithSmithingTable){
+			stoneOreRecipes();
+		}
+		if (ModConfig.getConfig().craftableOres.deepslateAndOreWithSmithingTable){
+			deepslateOreRecipes();
+		}
 	}
+
 
 	//NORMAL RECIPES
 	private void saddleRecipe() {
@@ -137,6 +147,7 @@ public class ModMain implements ModInitializer {
 		});
 	}
 
+
 	//ROTTEN FLESH TO LEATHER
 	private void rottenFleshToLeatherFromFurnace() {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
@@ -166,6 +177,21 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "driedkelp_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+
+
+	//CRAFTABLE ORES
+	private void stoneOreRecipes() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "stone_ore_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void deepslateOreRecipes() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "deepslate_ore_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 }

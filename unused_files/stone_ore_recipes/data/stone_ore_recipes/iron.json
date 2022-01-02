@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:stone"
+  },
+  "addition": {
+    "item": "minecraft:raw_iron"
+  },
+  "result": {
+    "item": "minecraft:iron_ore"
+  }
+}

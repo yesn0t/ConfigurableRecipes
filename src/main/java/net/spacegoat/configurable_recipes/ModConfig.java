@@ -21,6 +21,10 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("rotten_flesh_to_leather")
     public RottenFleshToLeather fleshToLeather = new RottenFleshToLeather();
 
+    @ConfigEntry.Gui.TransitiveObject
+    @Comment("craftable_ores")
+    public CraftableOres craftableOres = new CraftableOres();
+
     public static synchronized ModConfig getConfig() {
         if (!registered) {
             AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
@@ -60,7 +64,7 @@ public class ModConfig implements ConfigData {
         @Comment("All recipes contain Iron Ingots and Chains. Please check the Wiki for the recipes.")
         public boolean enableChainmailArmorRecipes = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("5 String in X shape = Trident")
+        @Comment("5 Strings in X shape = Cobweb")
         public boolean enableCobwebRecipe = true;
     }
     public static class RottenFleshToLeather{
@@ -79,5 +83,13 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
         public boolean rottenFleshToBeefFromSmoker = true;
+    }
+    public static class CraftableOres{
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("Stone (First) + Ore (Second) = Stone Ore Block")
+        public boolean stoneAndOreWithSmithingTable = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("Deepslate (First) + Ore (Seconds) = Deepslate Ore Block")
+        public boolean deepslateAndOreWithSmithingTable = true;
     }
 }
