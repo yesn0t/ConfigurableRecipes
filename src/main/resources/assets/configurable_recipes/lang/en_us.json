@@ -16,6 +16,7 @@
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableBellRecipe": "Bell Recipe",
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableTridentRecipe": "Trident Recipe",
   "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableChainmailArmorRecipes": "Chainmail Armor Recipes",
+  "text.autoconfig.configurable_recipes.option.vanillaRecipes.enableCobwebRecipe": "Cobweb Recipe",
 
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromFurnace": "Rotten Flesh To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.fleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",
