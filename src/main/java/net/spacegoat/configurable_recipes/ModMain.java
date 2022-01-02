@@ -70,11 +70,9 @@ public class ModMain implements ModInitializer {
 		}
 
 
-		if (ModConfig.getConfig().craftableOres.stoneAndOreWithSmithingTable){
-			stoneOreRecipes();
-		}
-		if (ModConfig.getConfig().craftableOres.deepslateAndOreWithSmithingTable){
-			deepslateOreRecipes();
+		//UNDO RECIPES
+		if (ModConfig.getConfig().undoRecipes.slabToBlock){
+			slabToBlockRecipes();
 		}
 	}
 
@@ -181,17 +179,11 @@ public class ModMain implements ModInitializer {
 	}
 
 
-	//CRAFTABLE ORES
-	private void stoneOreRecipes() {
+	//UNDO RECIPES
+	private void slabToBlockRecipes() {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					MOD_ID, "stone_ore_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
-		});
-	}
-	private void deepslateOreRecipes() {
-		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
-			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
-					MOD_ID, "deepslate_ore_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+					MOD_ID, "slab_to_block_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 }

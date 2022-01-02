@@ -22,8 +22,8 @@ public class ModConfig implements ConfigData {
     public RottenFleshToLeather fleshToLeather = new RottenFleshToLeather();
 
     @ConfigEntry.Gui.TransitiveObject
-    @Comment("craftable_ores")
-    public CraftableOres craftableOres = new CraftableOres();
+    @ConfigEntry.Category("undo_recipes")
+    public UndoRecipes undoRecipes = new UndoRecipes();
 
     public static synchronized ModConfig getConfig() {
         if (!registered) {
@@ -84,12 +84,9 @@ public class ModConfig implements ConfigData {
         @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
         public boolean rottenFleshToBeefFromSmoker = true;
     }
-    public static class CraftableOres{
+    public static class UndoRecipes{
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("Stone (First) + Ore (Second) = Stone Ore Block")
-        public boolean stoneAndOreWithSmithingTable = true;
-        @ConfigEntry.Gui.RequiresRestart
-        @Comment("Deepslate (First) + Ore (Seconds) = Deepslate Ore Block")
-        public boolean deepslateAndOreWithSmithingTable = true;
+        @Comment("6 Slabs Vertically = 3 Blocks")
+        public boolean slabToBlock = true;
     }
 }
