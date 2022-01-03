@@ -17,61 +17,61 @@ public class ModMain implements ModInitializer {
 	public void onInitialize() {
 
 		//VANILLA RECIPES
-		if (ModConfig.getConfig().vanillaRecipes.enableSaddleRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableSaddleRecipe){
 			saddleRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableHorseArmorRecipes){
+		if (ModConfig.getConfig().VanillaRecipes.enableHorseArmorRecipes){
 			horseArmorRecipes();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableSpongeRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableSpongeRecipe){
 			spongeRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableGlowstoneDustRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableGlowstoneDustRecipe){
 			glowstoneDustRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableNameTagRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableNameTagRecipe){
 			nametagRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.saplingToStick){
+		if (ModConfig.getConfig().VanillaRecipes.saplingToStick){
 			saplingToStickRecipes();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableTotemOfUndyingRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableTotemOfUndyingRecipe){
 			totemOfUndyingRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableBellRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableBellRecipe){
 			bellRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableTridentRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableTridentRecipe){
 			tridentRecipe();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableChainmailArmorRecipes){
+		if (ModConfig.getConfig().VanillaRecipes.enableChainmailArmorRecipes){
 			chainmailArmorRecipes();
 		}
-		if (ModConfig.getConfig().vanillaRecipes.enableCobwebRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableCobwebRecipe){
 			cobwebRecipe();
 		}
 
 
 		//ROTTEN FLESH TO LEATHER
-		if (ModConfig.getConfig().fleshToLeather.rottenFleshFromFurnace){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromFurnace){
 			rottenFleshToLeatherFromFurnace();
 		}
-		if (ModConfig.getConfig().fleshToLeather.rottenFleshFromCampfire){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromCampfire){
 			rottenFleshToLeatherFromCampfire();
 		}
-		if (ModConfig.getConfig().fleshToLeather.driedKelpFromFurnace){
+		if (ModConfig.getConfig().FleshToLeather.driedKelpFromFurnace){
             driedKelpToLeatherFurnace();
 		}
-		if (ModConfig.getConfig().fleshToLeather.driedKelpFromCampfire){
+		if (ModConfig.getConfig().FleshToLeather.driedKelpFromCampfire){
 			driedKelpToLeatherCampfire();
 		}
-		if (ModConfig.getConfig().fleshToLeather.rottenFleshToBeefFromSmoker){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshToBeefFromSmoker){
 			rottenFleshToBeef();
 		}
 
 
 		//UNDO RECIPES
-		if (ModConfig.getConfig().undoRecipes.slabToBlock){
+		if (ModConfig.getConfig().UndoRecipes.slabToBlock){
 			slabToBlockRecipes();
 		}
 	}

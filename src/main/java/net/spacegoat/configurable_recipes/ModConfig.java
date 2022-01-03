@@ -15,15 +15,15 @@ public class ModConfig implements ConfigData {
     private transient static boolean registered = false;
 
     @ConfigEntry.Gui.TransitiveObject
-    public Recipes vanillaRecipes = new Recipes();
+    public Recipes VanillaRecipes = new Recipes();
 
     @ConfigEntry.Gui.TransitiveObject
     @ConfigEntry.Category("rotten_flesh_to_leather")
-    public RottenFleshToLeather fleshToLeather = new RottenFleshToLeather();
+    public RottenFleshToLeather FleshToLeather = new RottenFleshToLeather();
 
     @ConfigEntry.Gui.TransitiveObject
     @ConfigEntry.Category("undo_recipes")
-    public UndoRecipes undoRecipes = new UndoRecipes();
+    public UndoRecipes UndoRecipes = new UndoRecipes();
 
     public static synchronized ModConfig getConfig() {
         if (!registered) {
