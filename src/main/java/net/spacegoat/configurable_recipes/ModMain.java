@@ -17,61 +17,61 @@ public class ModMain implements ModInitializer {
 	public void onInitialize() {
 
 		//VANILLA RECIPES
-		if (ModConfig.getConfig().VanillaRecipes.enableSaddleRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableSaddleRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			saddleRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableHorseArmorRecipes){
+		if (ModConfig.getConfig().VanillaRecipes.enableHorseArmorRecipes && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			horseArmorRecipes();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableSpongeRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableSpongeRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			spongeRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableGlowstoneDustRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableGlowstoneDustRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			glowstoneDustRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableNameTagRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableNameTagRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			nametagRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.saplingToStick){
+		if (ModConfig.getConfig().VanillaRecipes.saplingToStick && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			saplingToStickRecipes();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableTotemOfUndyingRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableTotemOfUndyingRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			totemOfUndyingRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableBellRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableBellRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			bellRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableTridentRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableTridentRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			tridentRecipe();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableChainmailArmorRecipes){
+		if (ModConfig.getConfig().VanillaRecipes.enableChainmailArmorRecipes && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			chainmailArmorRecipes();
 		}
-		if (ModConfig.getConfig().VanillaRecipes.enableCobwebRecipe){
+		if (ModConfig.getConfig().VanillaRecipes.enableCobwebRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			cobwebRecipe();
 		}
 
 
 		//ROTTEN FLESH TO LEATHER
-		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromFurnace){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromFurnace && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			rottenFleshToLeatherFromFurnace();
 		}
-		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromCampfire){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshFromCampfire && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			rottenFleshToLeatherFromCampfire();
 		}
-		if (ModConfig.getConfig().FleshToLeather.driedKelpFromFurnace){
+		if (ModConfig.getConfig().FleshToLeather.driedKelpFromFurnace && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
             driedKelpToLeatherFurnace();
 		}
-		if (ModConfig.getConfig().FleshToLeather.driedKelpFromCampfire){
+		if (ModConfig.getConfig().FleshToLeather.driedKelpFromCampfire && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			driedKelpToLeatherCampfire();
 		}
-		if (ModConfig.getConfig().FleshToLeather.rottenFleshToBeefFromSmoker){
+		if (ModConfig.getConfig().FleshToLeather.rottenFleshToBeefFromSmoker && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			rottenFleshToBeef();
 		}
 
 
 		//UNDO RECIPES
-		if (ModConfig.getConfig().UndoRecipes.slabToBlock){
+		if (ModConfig.getConfig().UndoRecipes.slabToBlock && ModConfig.getConfig().RecipeCategories.enableUndoRecipes){
 			slabToBlockRecipes();
 		}
 	}

@@ -15,6 +15,10 @@ public class ModConfig implements ConfigData {
     private transient static boolean registered = false;
 
     @ConfigEntry.Gui.TransitiveObject
+    public RecipeCategories RecipeCategories = new RecipeCategories();
+
+    @ConfigEntry.Gui.TransitiveObject
+    @ConfigEntry.Category("vanilla_recipes")
     public Recipes VanillaRecipes = new Recipes();
 
     @ConfigEntry.Gui.TransitiveObject
@@ -31,6 +35,17 @@ public class ModConfig implements ConfigData {
             registered = true;
         }
         return AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+    }
+    public static class RecipeCategories{
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("Enables all Vanilla Recipe type recipes.")
+        public boolean enableVanillaRecipes = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("Enables all Rotten Flesh to Leather Recipe type recipes.")
+        public boolean enableFleshToLeatherRecipes = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("Enables all Undo Recipe type recipes.")
+        public boolean enableUndoRecipes = true;
     }
     public static class Recipes {
         @ConfigEntry.Gui.RequiresRestart
