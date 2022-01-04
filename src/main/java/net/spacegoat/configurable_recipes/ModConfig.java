@@ -107,5 +107,8 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("6 Slabs Vertically = 3 Blocks")
         public boolean slabToBlock = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("4 Stairs in a square shape = 6 Blocks")
+        public boolean stairToBlock = true;
     }
 }

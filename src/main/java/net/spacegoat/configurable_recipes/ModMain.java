@@ -77,6 +77,9 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().UndoRecipes.slabToBlock && ModConfig.getConfig().RecipeCategories.enableUndoRecipes){
 			slabToBlockRecipes();
 		}
+		if (ModConfig.getConfig().UndoRecipes.stairToBlock && ModConfig.getConfig().RecipeCategories.enableUndoRecipes){
+			stairToBlockRecipes();
+		}
 	}
 
 
@@ -193,6 +196,12 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "slab_to_block_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void stairToBlockRecipes() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "stair_to_block_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 }
