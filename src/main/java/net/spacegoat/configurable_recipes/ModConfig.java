@@ -1,5 +1,6 @@
 package net.spacegoat.configurable_recipes;
 
+import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -81,6 +82,9 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("5 Strings in X shape = Cobweb")
         public boolean enableCobwebRecipe = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("1 Dirt/Grass + 1 Bone Meal = 3 Dirt/Grass")
+        public boolean enableBonemealMultiplier = true;
     }
     public static class RottenFleshToLeather{
         @ConfigEntry.Gui.RequiresRestart

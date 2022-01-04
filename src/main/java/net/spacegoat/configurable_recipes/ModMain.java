@@ -50,6 +50,9 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().VanillaRecipes.enableCobwebRecipe && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
 			cobwebRecipe();
 		}
+		if (ModConfig.getConfig().VanillaRecipes.enableBonemealMultiplier && ModConfig.getConfig().RecipeCategories.enableVanillaRecipes){
+			bonemealMultiplierRecipes();
+		}
 
 
 		//ROTTEN FLESH TO LEATHER
@@ -142,6 +145,12 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added  = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "cobweb_recipe"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void bonemealMultiplierRecipes() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "bonemeal_multiplier_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 
