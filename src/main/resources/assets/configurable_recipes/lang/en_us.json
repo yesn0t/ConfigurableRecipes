@@ -19,6 +19,7 @@
   "text.autoconfig.configurable_recipes.option.VanillaRecipes.enableTridentRecipe": "Trident Recipe",
   "text.autoconfig.configurable_recipes.option.VanillaRecipes.enableChainmailArmorRecipes": "Chainmail Armor Recipes",
   "text.autoconfig.configurable_recipes.option.VanillaRecipes.enableCobwebRecipe": "Cobweb Recipe",
+  "text.autoconfig.configurable_recipes.option.VanillaRecipes.enableBonemealMultiplier": "Bonemeal Multiplier Recipes",
 
   "text.autoconfig.configurable_recipes.option.FleshToLeather.rottenFleshFromFurnace": "Rotten Flesh To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.FleshToLeather.rottenFleshFromCampfire": "Rotten Flesh To Leather By Campfire",
