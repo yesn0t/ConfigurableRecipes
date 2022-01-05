@@ -102,6 +102,12 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
         public boolean rottenFleshToBeefFromSmoker = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment()
+        public boolean enableDriedKelpBlockFromFurnace = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment()
+        public boolean enableDriedKelpBlockFromCampfire = true;
     }
     public static class UndoRecipes{
         @ConfigEntry.Gui.RequiresRestart
