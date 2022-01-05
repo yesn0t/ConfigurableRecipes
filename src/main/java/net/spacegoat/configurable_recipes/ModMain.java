@@ -71,6 +71,12 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().FleshToLeather.rottenFleshToBeefFromSmoker && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			rottenFleshToBeef();
 		}
+		if (ModConfig.getConfig().FleshToLeather.driedKelpBlockFromCampfire && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
+			driedKelpBlockToLeatherCampfire();
+		}
+		if (ModConfig.getConfig().FleshToLeather.driedKelpBlockFromFurnace && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
+			driedKelpBlockToLeatherFurnace();
+		}
 
 
 		//UNDO RECIPES
@@ -79,6 +85,17 @@ public class ModMain implements ModInitializer {
 		}
 		if (ModConfig.getConfig().UndoRecipes.stairToBlock && ModConfig.getConfig().RecipeCategories.enableUndoRecipes){
 			stairToBlockRecipes();
+		}
+
+
+		//MODDED RECIPES
+
+		//BLOCK OF...
+		if (ModConfig.getConfig().BlockOfRecipes.enableRottenFleshBlockToLeatherFromFurnace && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+			rottenFleshBlockToLeatherFurnace();
+		}
+		if (ModConfig.getConfig().BlockOfRecipes.enableRottenFleshBlockToLeatherFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+			rottenFleshBlockToLeatherCampfire();
 		}
 	}
 
@@ -189,6 +206,19 @@ public class ModMain implements ModInitializer {
 					MOD_ID, "driedkelp_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
+	private void driedKelpBlockToLeatherFurnace() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "driedkelp_block_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void driedKelpBlockToLeatherCampfire() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "driedkelp_block_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+
 
 
 	//UNDO RECIPES
@@ -202,6 +232,23 @@ public class ModMain implements ModInitializer {
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
 					MOD_ID, "stair_to_block_recipes"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+
+
+	//MODDED RECIPES
+
+	//BLOCK OF...
+	private void rottenFleshBlockToLeatherFurnace() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "rottenflesh_block_to_leather_furnace"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
+		});
+	}
+	private void rottenFleshBlockToLeatherCampfire() {
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			var added = ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(
+					MOD_ID, "rottenflesh_block_to_leather_campfire"), modContainer, ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 }

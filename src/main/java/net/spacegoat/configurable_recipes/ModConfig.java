@@ -1,6 +1,5 @@
 package net.spacegoat.configurable_recipes;
 
-import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -30,6 +29,10 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("undo_recipes")
     public UndoRecipes UndoRecipes = new UndoRecipes();
 
+    @ConfigEntry.Gui.TransitiveObject
+    @ConfigEntry.Category("blockof_recipes")
+    public BlockOfRecipes BlockOfRecipes = new BlockOfRecipes();
+
     public static synchronized ModConfig getConfig() {
         if (!registered) {
             AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
@@ -47,6 +50,9 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("Enables all Undo Recipe type recipes.")
         public boolean enableUndoRecipes = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("(Requires Block Of... Mod) Enables all Block Of... Recipes")
+        public boolean enableBlockOfRecipes = true;
     }
     public static class Recipes {
         @ConfigEntry.Gui.RequiresRestart
@@ -103,11 +109,11 @@ public class ModConfig implements ConfigData {
         @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
         public boolean rottenFleshToBeefFromSmoker = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment()
-        public boolean enableDriedKelpBlockFromFurnace = true;
+        @Comment("3 Minutes 27 Seconds / 4140 - 0.5 Experience")
+        public boolean driedKelpBlockFromFurnace = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment()
-        public boolean enableDriedKelpBlockFromCampfire = true;
+        @Comment("3 Minutes 27 Seconds / 4140 - 1 Experience")
+        public boolean driedKelpBlockFromCampfire = true;
     }
     public static class UndoRecipes{
         @ConfigEntry.Gui.RequiresRestart
@@ -116,5 +122,13 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("4 Stairs in a square shape = 6 Blocks")
         public boolean stairToBlock = true;
+    }
+    public static class BlockOfRecipes{
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("(Requires BlockOf...) 6 Minutes / 7200 Ticks - 0.5 Experience")
+        public boolean enableRottenFleshBlockToLeatherFromFurnace = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("(Requires BlockOf...) 6 Minutes / 7200 Ticks - 1 Experience")
+        public boolean enableRottenFleshBlockToLeatherFromCampfire = true;
     }
 }

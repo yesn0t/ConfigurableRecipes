@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "block_of:rotten_f_block"
+  },
+  "result": "block_of:leather_block",
+  "experience": 0.5,
+  "cookingtime": 7200
+}
