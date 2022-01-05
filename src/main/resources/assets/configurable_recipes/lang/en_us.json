@@ -27,6 +27,8 @@
   "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpFromFurnace": "Dried Kelp To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpFromCampfire": "Dried Kelp To Leather By Campfire",
   "text.autoconfig.configurable_recipes.option.FleshToLeather.rottenFleshToBeefFromSmoker": "Rotten Flesh To Beef By Smoker",
+  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromFurnace": "Dried Kelp Block To Leather By Furnace",
+  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromCampfire": "Dried Kelp Block To Leather By Campfire",
 
   "text.autoconfig.configurable_recipes.option.UndoRecipes.slabToBlock": "Slab To Block Recipes",
   "text.autoconfig.configurable_recipes.option.UndoRecipes.stairToBlock": "Stair To Block Recipes",
