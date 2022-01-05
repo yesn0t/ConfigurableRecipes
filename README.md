@@ -1,6 +1,6 @@
 ##
 
-<img src="https://raw.githubusercontent.com/spacegoat3/ConfigurableRecipes/Fabric-1.18/src/main/resources/configurable_recipes.png" width="150" height="150">
+<img src="https://github.com/spacegoat3/ConfigurableRecipes/blob/Fabric-1.18/src/main/resources/configurable_recipes_icon.png" width="150" height="150">
 
 # Configurable Recipes
 
