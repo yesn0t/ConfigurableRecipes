@@ -89,7 +89,7 @@ public class ModConfig implements ConfigData {
         @Comment("5 Strings in X shape = Cobweb")
         public boolean enableCobwebRecipe = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("1 Dirt/Grass + 1 Bone Meal = 3 Dirt/Grass")
+        @Comment("1 Dirt/Grass + Rotten Flesh + 1 Bone Meal = 3 Dirt/Grass")
         public boolean enableBonemealMultiplier = true;
     }
     public static class RottenFleshToLeather{
