@@ -5,6 +5,9 @@
       "item": "minecraft:coarse_dirt"
     },
     {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
       "item": "minecraft:bone_meal"
     }
   ],

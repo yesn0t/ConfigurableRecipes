@@ -5,6 +5,9 @@
       "item": "minecraft:grass_block"
     },
     {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
       "item": "minecraft:bone_meal"
     }
   ],
