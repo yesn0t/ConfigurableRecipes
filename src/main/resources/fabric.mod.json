@@ -23,7 +23,7 @@
   },
 
   "license": "MIT",
-  "icon": "configurable_recipes.png",
+  "icon": "configurable_recipes_icon.png",
 
   "environment": "*",
   "entrypoints": {
