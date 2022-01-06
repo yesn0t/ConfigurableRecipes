@@ -71,12 +71,6 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().FleshToLeather.rottenFleshToBeefFromSmoker && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
 			rottenFleshToBeef();
 		}
-		if (ModConfig.getConfig().FleshToLeather.driedKelpBlockFromCampfire && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
-			driedKelpBlockToLeatherCampfire();
-		}
-		if (ModConfig.getConfig().FleshToLeather.driedKelpBlockFromFurnace && ModConfig.getConfig().RecipeCategories.enableFleshToLeatherRecipes){
-			driedKelpBlockToLeatherFurnace();
-		}
 
 
 		//UNDO RECIPES
@@ -96,6 +90,12 @@ public class ModMain implements ModInitializer {
 		}
 		if (ModConfig.getConfig().BlockOfRecipes.enableRottenFleshBlockToLeatherFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
 			rottenFleshBlockToLeatherCampfire();
+		}
+		if (ModConfig.getConfig().BlockOfRecipes.driedKelpBlockFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+			driedKelpBlockToLeatherCampfire();
+		}
+		if (ModConfig.getConfig().BlockOfRecipes.driedKelpBlockFromFurnace && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+			driedKelpBlockToLeatherFurnace();
 		}
 	}
 

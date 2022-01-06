@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "minecraft:dried_kelp_block"
   },
-  "result": "minecraft:leather",
+  "result": "block_of:leather_block",
   "experience": 0.5,
   "cookingtime": 4140
 }

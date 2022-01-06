@@ -108,12 +108,6 @@ public class ModConfig implements ConfigData {
         @ConfigEntry.Gui.RequiresRestart
         @Comment("50 Seconds / 1000 Ticks - 1.5 Experience")
         public boolean rottenFleshToBeefFromSmoker = true;
-        @ConfigEntry.Gui.RequiresRestart
-        @Comment("3 Minutes 27 Seconds / 4140 - 0.5 Experience")
-        public boolean driedKelpBlockFromFurnace = true;
-        @ConfigEntry.Gui.RequiresRestart
-        @Comment("3 Minutes 27 Seconds / 4140 - 1 Experience")
-        public boolean driedKelpBlockFromCampfire = true;
     }
     public static class UndoRecipes{
         @ConfigEntry.Gui.RequiresRestart
@@ -128,7 +122,13 @@ public class ModConfig implements ConfigData {
         @Comment("(Requires BlockOf...) 6 Minutes / 7200 Ticks - 0.5 Experience")
         public boolean enableRottenFleshBlockToLeatherFromFurnace = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("(Requires BlockOf...) 6 Minutes / 7200 Ticks - 1 Experience")
+        @Comment("(Requires Block Of...) 6 Minutes / 7200 Ticks - 1 Experience")
         public boolean enableRottenFleshBlockToLeatherFromCampfire = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 - 0.5 Experience")
+        public boolean driedKelpBlockFromFurnace = true;
+        @ConfigEntry.Gui.RequiresRestart
+        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 - 1 Experience")
+        public boolean driedKelpBlockFromCampfire = true;
     }
 }

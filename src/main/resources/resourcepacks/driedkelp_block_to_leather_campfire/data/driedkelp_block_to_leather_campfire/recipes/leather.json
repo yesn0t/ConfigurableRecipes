@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": {
-    "item": "minecraft:dried_kelp"
+    "item": "minecraft:dried_kelp_block"
   },
-  "result": "minecraft:leather",
+  "result": "block_of:leather_block",
   "experience": 1,
   "cookingtime": 4140
 }
