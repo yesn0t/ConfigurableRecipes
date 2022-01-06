@@ -27,14 +27,16 @@
   "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpFromFurnace": "Dried Kelp To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpFromCampfire": "Dried Kelp To Leather By Campfire",
   "text.autoconfig.configurable_recipes.option.FleshToLeather.rottenFleshToBeefFromSmoker": "Rotten Flesh To Beef By Smoker",
-  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromFurnace": "Dried Kelp Block To Leather By Furnace",
-  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromCampfire": "Dried Kelp Block To Leather By Campfire",
 
   "text.autoconfig.configurable_recipes.option.UndoRecipes.slabToBlock": "Slab To Block Recipes",
   "text.autoconfig.configurable_recipes.option.UndoRecipes.stairToBlock": "Stair To Block Recipes",
+  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromFurnace": "Dried Kelp Block To Leather By Furnace",
+  "text.autoconfig.configurable_recipes.option.FleshToLeather.driedKelpBlockFromCampfire": "Dried Kelp Block To Leather By Campfire",
 
   "text.autoconfig.configurable_recipes.option.BlockOfRecipes.enableRottenFleshBlockToLeatherFromFurnace": "Rotten Flesh Block To Leather By Furnace",
   "text.autoconfig.configurable_recipes.option.BlockOfRecipes.enableRottenFleshBlockToLeatherFromCampfire": "Rotten Flesh Block To Leather By Campfire",
+  "text.autoconfig.configurable_recipes.option.BlockOfRecipes.enableDriedKelpBlockFromFurnace": "Dried Kelp Block To Leather By Furnace",
+  "text.autoconfig.configurable_recipes.option.BlockOfRecipes.enableDriedKelpBlockFromCampfire": "Dried Kelp Block To Leather By Campfire",
 
   "text.autoconfig.configurable_recipes.option.RecipeCategories.enableVanillaRecipes": "Vanilla Recipes",
   "text.autoconfig.configurable_recipes.option.RecipeCategories.enableFleshToLeatherRecipes":"Rotten Flesh to Leather Recipes",

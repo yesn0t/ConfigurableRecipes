@@ -91,10 +91,10 @@ public class ModMain implements ModInitializer {
 		if (ModConfig.getConfig().BlockOfRecipes.enableRottenFleshBlockToLeatherFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
 			rottenFleshBlockToLeatherCampfire();
 		}
-		if (ModConfig.getConfig().BlockOfRecipes.driedKelpBlockFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+		if (ModConfig.getConfig().BlockOfRecipes.enableDriedKelpBlockFromCampfire && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
 			driedKelpBlockToLeatherCampfire();
 		}
-		if (ModConfig.getConfig().BlockOfRecipes.driedKelpBlockFromFurnace && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
+		if (ModConfig.getConfig().BlockOfRecipes.enableDriedKelpBlockFromFurnace && ModConfig.getConfig().RecipeCategories.enableBlockOfRecipes){
 			driedKelpBlockToLeatherFurnace();
 		}
 	}

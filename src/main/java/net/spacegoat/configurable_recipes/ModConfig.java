@@ -125,10 +125,10 @@ public class ModConfig implements ConfigData {
         @Comment("(Requires Block Of...) 6 Minutes / 7200 Ticks - 1 Experience")
         public boolean enableRottenFleshBlockToLeatherFromCampfire = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 - 0.5 Experience")
-        public boolean driedKelpBlockFromFurnace = true;
+        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 Ticks - 0.5 Experience")
+        public boolean enableDriedKelpBlockFromFurnace = true;
         @ConfigEntry.Gui.RequiresRestart
-        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 - 1 Experience")
-        public boolean driedKelpBlockFromCampfire = true;
+        @Comment("(Requires Block Of...) 3 Minutes 27 Seconds / 4140 Ticks - 1 Experience")
+        public boolean enableDriedKelpBlockFromCampfire = true;
     }
 }
