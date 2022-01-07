@@ -10,7 +10,7 @@
       "item": "minecraft:redstone"
     },
     "#": {
-      "tag": "minecraft:stone_crafting_materials"
+      "tag": "configurable_recipes:stone_crafting_materials"
     }
   },
   "result": {
